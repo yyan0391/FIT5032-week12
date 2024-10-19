@@ -7,10 +7,6 @@ import LogoutView from '@/views/LogoutView.vue'
 import AddBookView from '@/views/AddBookView.vue'
 
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
-})
 
 
 
@@ -47,5 +43,9 @@ const routes = [
   }
 ]
 
+const router = createRouter({
+  history: createWebHistory(import.meta.env.VITE_BASE_URL),
+  routes
+})
 
 export default router
